@@ -1,0 +1,30 @@
+2023-08-08T03:25:46.801587+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-08-08T03:25:46.802814+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: 
+2023-08-08T03:25:46.803010+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: time="2023-08-08T08:55:46+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+
+2023-08-08T03:25:46.832868+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-08-10T02:51:51.608928+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-08-10T02:51:51.614520+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: 
+2023-08-10T02:51:51.614693+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: time="2023-08-10T08:21:51+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+
+2023-08-10T02:51:51.715769+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-08-10T02:52:19.973869+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' [31mERRO[0m[0000] XDG_RUNTIME_DIR directory "/run/user/0" is not owned by the current user 
+
+2023-08-10T02:52:23.285745+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-10T02:52:36.090865+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Configuration errors encountered, rolling back to previous configuration.
+2023-08-10T02:52:36.091107+00:00 WARNING 'ansible_navigator.actions.doc._update_args' Issues were found while applying the settings.
+2023-08-10T02:52:36.091159+00:00 WARNING 'ansible_navigator.actions.doc._update_args' A plugin name or other parameter is required when using the doc subcommand
+2023-08-10T02:52:42.624911+00:00 ERROR 'ansible_navigator.actions.doc._run_runner' Error occurred while fetching doc for plugin ansible: 'time="2023-08-10T08:22:42+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+'
+2023-08-10T02:53:39.499610+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-08-10T02:53:39.501835+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: 
+2023-08-10T02:53:39.501932+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: time="2023-08-10T08:23:39+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+
+2023-08-10T02:53:39.751731+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-08-10T02:54:04.798028+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' [31mERRO[0m[0000] XDG_RUNTIME_DIR directory "/run/user/0" is not owned by the current user 
+
+2023-08-10T02:54:11.875578+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-08-10T02:54:22.307089+00:00 ERROR 'ansible_navigator.actions.config._run_runner' Error occurred while fetching ansible config (list): 'time="2023-08-10T08:24:22+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+'
+2023-08-10T02:54:22.307291+00:00 ERROR 'ansible_navigator.actions.config._run_runner' Error occurred while fetching ansible config (dump): 'time="2023-08-10T08:24:22+05:30" level=error msg="XDG_RUNTIME_DIR directory \"/run/user/0\" is not owned by the current user"
+'

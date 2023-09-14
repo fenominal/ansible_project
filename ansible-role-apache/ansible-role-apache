@@ -1,0 +1,19 @@
+---
+# tasks file for ansible-role-apache#
+- name: Install Apache
+  package:
+    name: httpd
+    state: present
+
+- name: Copy Apache Config
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf
+  notify: Restart Apache
+
+- name: Start Apache Service
+  systemd:
+    name: httpd
+    enabled: yes
+    state: started
+

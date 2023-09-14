@@ -1,0 +1,8 @@
+---
+- name: Configure Apache on Target Machine
+  hosts: 192.168.128.135
+  remote_user: client
+  become: true
+  roles:
+    - ansible-role-apache
+

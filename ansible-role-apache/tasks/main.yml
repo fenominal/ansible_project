@@ -1,0 +1,34 @@
+---
+# tasks file for ansible-role-apache#
+# tasks/main.yml
+- name: Install Apache
+  package:
+    name: httpd
+    state: present
+
+      #- name: Copy Apache Config
+  # template:
+    #src: httpd.conf.j2
+      #dest: /etc/httpd/conf/httpd.conf
+      #  notify: Restart Apache
+
+- name: Start Apache Service
+  systemd:
+    name: httpd
+    enabled: yes
+    state: started
+
+- name: Create Index File
+  copy:
+    content: "Hello, this is the index file."
+    dest: /var/www/html/index.html
+
+- name: Perform curl on Index File
+  uri:
+    url: http://localhost/
+    return_content: yes
+  register: curl_output
+
+- name: Display curl Output
+  debug:
+    var: curl_output.content
